@@ -26,12 +26,50 @@ Multiplication Wizard is a fun, interactive web application designed to help pri
     -   **Detailed Review:** A table showing every question, the child's answer, and the correct answer for easy review and learning.
 -   **Kid-Friendly Design:** Colorful, responsive interface that works great on both tablets and computers.
 
-## 🚀 How to Use
+## 🚀 Getting Started
 
-1.  Open `index.html` in any modern web browser.
-2.  Click **"Start Game"** to begin the session.
-3.  Choose the correct answer from the four options provided.
-4.  After 10 questions, review the results and try to beat your previous score or time!
+### Setup
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/shadowandy/Multiplication-Wizard.git
+    ```
+2.  **Navigate to the Directory:**
+    ```bash
+    cd Multiplication-Wizard
+    ```
+3.  **Run the App:**
+    Simply open `index.html` in your favorite web browser. No local server or installation is required!
+
+### How to Play
+1.  Click **"Start Game"** to begin a session.
+2.  Select the correct answer from the four choices provided.
+3.  Review your performance on the **Results Screen** to see your score, time, and a detailed breakdown of each question.
+
+## ⚙️ Customization
+
+You can easily tailor the game to your child's learning level by modifying the `CONFIG` object at the top of `script.js`.
+
+```javascript
+const CONFIG = {
+    TOTAL_QUESTIONS: 10,       // Number of questions per round
+    RANGES: {
+        BASE: { MIN: 2, MAX: 12 },       // The main number being multiplied
+        MULTIPLIER: { MIN: 1, MAX: 12 }  // The range of the multiplier
+    },
+    DELAY: {
+        FEEDBACK: 1200         // Time (ms) to show feedback before next question
+    },
+    MESSAGES: {
+        CORRECT: 'Good Job!',  // Audio/Visual message for correct answers
+        WRONG: 'Good Try!'     // Audio/Visual message for incorrect answers
+    }
+};
+```
+
+### Examples:
+- **Focus on 5 times table:** Set `BASE: { MIN: 5, MAX: 5 }`.
+- **Easier Mode:** Set `MULTIPLIER: { MIN: 1, MAX: 5 }` and `TOTAL_QUESTIONS: 5`.
+- **Challenge Mode:** Set `BASE: { MIN: 12, MAX: 15 }`.
 
 ## 🛠️ Technology Stack
 
