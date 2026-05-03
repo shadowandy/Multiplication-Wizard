@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Wizard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen">
+            <h1>Multiplication Wizard</h1>
+            <p>Ready to test your math skills?</p>
+            <button id="start-btn" class="primary-btn">Start Game</button>
+        </section>
+
+        <!-- Game Screen -->
+        <section id="game-screen" class="screen hidden">
+            <div id="game-header">
+                <span id="question-counter">Question 1 / 10</span>
+                <span id="timer">00:00</span>
+            </div>
+            <div id="question-container">
+                <div class="card">
+                    <h2 id="question-text">3 × 6 = ?</h2>
+                </div>
+            </div>
+            <div id="options-container">
+                <button class="option-btn" data-index="0"></button>
+                <button class="option-btn" data-index="1"></button>
+                <button class="option-btn" data-index="2"></button>
+                <button class="option-btn" data-index="3"></button>
+            </div>
+            <div id="feedback-overlay" class="hidden">
+                <h2 id="feedback-text">Good Job!</h2>
+            </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="screen hidden">
+            <h1>Well Done!</h1>
+            <div id="summary-stats">
+                <div class="stat-box">
+                    <span class="stat-label">Score</span>
+                    <span id="final-score" class="stat-value">0/10</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Time</span>
+                    <span id="final-time" class="stat-value">0s</span>
+                </div>
+            </div>
+            <div id="detailed-results">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>Your Answer</th>
+                            <th>Correct</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+            </div>
+            <button id="restart-btn" class="primary-btn">Play Again</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
