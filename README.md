@@ -2,6 +2,17 @@
 
 Multiplication Wizard is a fun, interactive web application designed to help primary school children master their multiplication tables. It turns learning into an engaging game, providing immediate feedback and a sense of accomplishment.
 
+## 📸 Screenshots
+
+### Start Screen
+<img src="imgs/multiplication-wizard-1.png" alt="Start Screen" width="400">
+
+### Gameplay
+<img src="imgs/multiplication-wizard-2.png" alt="Gameplay" width="400">
+
+### Results Summary
+<img src="imgs/multiplication-wizard-3.png" alt="Results Summary" width="400">
+
 ## 🌟 Features
 
 -   **Randomized Challenges:** Generates 10 unique multiplication questions per session, ranging from 2×1 up to 12×12.
